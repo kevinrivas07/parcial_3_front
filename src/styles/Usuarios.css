@@ -1,0 +1,64 @@
+/* Estilos violentos para Usuarios.css */
+.writers-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #00ffcc;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 12px #00ffcc;
+}
+
+/* lista de escritores */
+.writers-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.writer-item {
+  background: #1a1a2e;
+  padding: 20px 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ffcc44;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  animation: fadeSlide 0.5s ease;
+}
+
+.writer-item:hover {
+  transform: translateX(10px) scale(1.02);
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+.writer-info {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.writer-details {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
